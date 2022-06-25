@@ -1,10 +1,17 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
+  <MainHeader />
   <router-view />
 </template>
+
+<script>
+import MainHeader from "@/components/MainHeader.vue";
+
+export default {
+  components: {
+    MainHeader,
+  },
+};
+</script>
 
 <style>
 #app {
